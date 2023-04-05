@@ -318,6 +318,27 @@ body.dark .loader_line:after{
     animation-delay: 2000ms;
 }
 
+
+.main_menu_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
 /*---------------------------------------------------*/
 /*	02) IKNOW MOBILE MENU
 /*---------------------------------------------------*/

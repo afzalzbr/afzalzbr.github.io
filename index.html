@@ -14,7 +14,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<title>iKnow | Home</title>
+	<title>Maria Zafar | ML Engineer</title>
 
 	<!-- STYLES -->
 	<link
@@ -39,10 +39,37 @@
 			let isDark = document.body.classList.contains("dark");
 			if (isDark) {
 				document.body.classList.remove("dark");
+				document.getElementById('dark_mode').textContent = 'Dark';
+				document.getElementById('dark_mode').onclick = addDarkClassToBody;
 			} else {
 				document.body.classList.add("dark");
+				document.getElementById('dark_mode').textContent = 'Light';
+				document.getElementById('dark_mode').onclick = addDarkClassToBody;
 			}
 		}
+
+		// make it sticky
+
+		// window.addEventListener('DOMContentLoaded', () => {
+
+		// 	const mainMenu = document.querySelector('.main_menu');
+		// 	console.log(mainMenu)
+		// 	const stickyPoint = mainMenu.offsetTop + mainMenu.offsetHeight;
+
+		// 	console.log(mainMenu)
+		// 	console.log(stickyPoint)
+
+		// 	window.addEventListener('scroll', () => {
+		// 		if (window.pageYOffset >= stickyPoint) {
+		// 			mainMenu.classList.add('sticky');
+		// 			// mainMenu.classList.add('main_menu_2');
+		// 		} else {
+		// 			mainMenu.classList.remove('sticky');
+		// 			// mainMenu.classList.remove('main_menu_2');
+		// 		}
+		// 	});
+		// });
+
 	</script>
 
 	<!-- PRELOADER -->
@@ -85,7 +112,7 @@
 						<div class="iknow_tm_button">
 							<a href="img/cv/1.jpg" download>Download CV</a>
 						</div>
-						<div class="iknow_tm_button">
+						<div id="dark_mode" class="iknow_tm_button">
 							<div onclick="addDarkClassToBody()">Dark</div>
 						</div>
 					</div>
@@ -103,7 +130,7 @@
 						<div class="main_info">
 							<div class="left">
 								<span class="subtitle">I'm</span>
-								<h3 class="name">Jessica Parker</h3>
+								<h3 class="name">Maria Zafar</h3>
 								<p class="text">A passionate UI/UX Designer and Web Developer based In NYC, USA</p>
 								<div class="iknow_tm_video">
 									<div class="video_inner">
@@ -208,27 +235,27 @@
 									<ul>
 										<li>
 											<h3>Name</h3>
-											<span>Jessica Parker</span>
+											<span>Maria Zafar</span>
 										</li>
-										<li>
+										<!-- <li>
 											<h3>Birthday</h3>
 											<span>April 22, 1990</span>
-										</li>
+										</li> -->
 										<li>
-											<h3>Mail</h3>
-											<span>hello@anderson.com</span>
+											<h3>E-Mail</h3>
+											<span>m.zafar@khi.iba.edu.pk</span>
 										</li>
 										<li>
 											<h3>Phone</h3>
 											<span>+123 456 7890</span>
 										</li>
-										<li>
+										<!-- <li>
 											<h3>Address</h3>
 											<span>20, Bardeshi, Dhaka</span>
-										</li>
+										</li> -->
 										<li>
 											<h3>Nationality</h3>
-											<span>Bangladeshi</span>
+											<span>Pakistani</span>
 										</li>
 									</ul>
 								</div>
@@ -243,8 +270,9 @@
 								<p>A passionate UI/UX Designer and Web Developer based In NYC, USA</p>
 							</div>
 							<div class="text">
-								<p>Hi! My name is Jessica Parker. I am UI/UX designer, and I'm very passionate and dedicated to my work.
-									With 20 years experience as a professional graphic designer, I have acquired the skills and knowledge
+								<p>Hi! My name is Maria Zafar. I am Machine Learning Engineer, and I'm very passionate and dedicated to
+									my work.
+									With 4 years experience as a professional ML Engineer, I have acquired the skills and knowledge
 									necessary to make your project a success.</p>
 							</div>
 							<div class="iknow_tm_button">
